@@ -1,0 +1,11 @@
+<h1>Regions</h1>
+
+<% @regions.each do |region| %>
+   <li><%= link_to region.region_name, [@state, region] %></li>
+<% end %>
+
+
+<hr>
+
+
+<%= link_to 'Add a Region',  new_state_region_path %>

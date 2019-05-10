@@ -1,0 +1,10 @@
+<h1>Search By State</h1>
+
+<% @states.each do |state| %>
+    <li><%= link_to state.state_name, state %></li>
+  <% end %>
+
+
+  <hr>
+
+  <%= link_to 'Add a State',  new_state_path(@state) %>

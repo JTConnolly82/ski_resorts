@@ -1,0 +1,12 @@
+<h1>Add a State</h1>
+
+
+<%= form_for @state do |f| %>
+  <%= f.label :state_name %>
+  <%= f.text_field :state_name, required: true, autofocus: true %>
+  
+  <%= f.label :state_description %>
+  <%= f.text_field :state_description, required: true %>
+  
+  <%= f.submit %>
+<% end %>

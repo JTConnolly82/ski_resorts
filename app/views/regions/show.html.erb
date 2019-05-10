@@ -1,0 +1,12 @@
+<h1><%= @region.region_name %></h1>
+
+<p><%= @region.region_description %></p>
+
+<%= link_to 'Edit Region', edit_state_region_path([@state, @region]) %>
+<%= link_to 'Delete Region', @region, method: :delete %>
+
+<hr>
+
+<%= link_to 'Resorts', region_resorts_path(@region) %>
+
+

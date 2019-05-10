@@ -1,0 +1,19 @@
+<h1><%= @resort.resort_name %></h1>
+
+
+
+<ul>
+    <li>Description- <%= @resort.resort_description %></li>
+    <li>Vertical Drop- <%= @resort.vertical_drop %></li>
+    <li>Annual Snowfall- <%= @resort.annual_snowfall %></li>
+    <li>Allows Snowboarding- <%= @resort.allows_snowboarding %></li>
+</ul>
+
+
+<hr>
+
+<%= link_to 'Edit Resort', edit_region_resort_path([@region, @resort]) %>
+<%= link_to 'Delete Resort', [@region, @resort], method: :delete %>
+
+
+

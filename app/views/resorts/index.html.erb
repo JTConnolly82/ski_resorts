@@ -1,0 +1,12 @@
+<h1>Resorts</h1>
+
+
+<% @resorts.each do |resort| %>
+    <li><%= link_to resort.resort_name, [@region, resort] %></li>
+<% end %>
+
+
+
+<%= link_to 'Add a Resort', new_region_resort_path %>
+
+

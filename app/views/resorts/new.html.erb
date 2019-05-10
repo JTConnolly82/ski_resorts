@@ -1,0 +1,25 @@
+<h1>Add a Resort</h1>
+
+
+<%= form_for [@region, @resort] do |f| %>
+
+    <%= f.label :resort_name %>
+    <%= f.text_field :resort_name, autofocus: true %>
+
+    <%= f.label :resort_description %>
+    <%= f.text_field :resort_description, required: true %>
+
+    <%= f.label :vertical_drop %>
+    <%= f.text_field :vertical_drop %>
+
+    <%= f.label :annual_snowfall %>
+    <%= f.text_field :annual_snowfall %>
+
+    <%= f.label :allows_snowboarding %>
+    <%= f.text_field :allows_snowboarding %>
+
+    <%= f.submit %>
+
+<% end %>
+
+
